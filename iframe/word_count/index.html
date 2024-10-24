@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Assignment 5</title>
+    <style>
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="para"></div>
+    <br><br><br>
+    <div id="repeat"></div>
+    <script>
+        var text="In the starter code, starter starter starter some comments start with the words TO DO This is where you could add your lines of codes to solve this assignment. The words will need to be scrubbed of any punctuation . To do so, you may choose to use regex and replace or you may choose to get rid of any punctuation marks another way. It is up to you Watch out for casing . The JavaScript compiler does not think a lowercase and an uppercase letter are the same letter the way humans do . To avoid this set the entire string to be in lowercase"
+var words=text.toUpperCase().replace(/[.,]/g, "").split(" ")
+var Obj={}
+var Copy={}
+var a=[]
+var d=[]
+words.forEach(item => {Obj[item] = (Obj[item] || 0) +1})
+    for (let item in Obj)
+    { 
+        if (Obj[item] > 1) { Copy[item] = Obj[item]; }
+    }
+    for(var x in Copy)
+    {
+    a.push([x,Copy[x]])
+    }
+    a.sort((z, y)=>{return z[1] - y[1]})
+    d=a.splice(a.length-3)
+    document.getElementById('para').innerHTML=text;
+    document.getElementById('repeat').innerHTML=d;
+    console.log(d)
+
+
+
+    </script>
+</body>
+</html>

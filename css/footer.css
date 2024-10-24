@@ -1,0 +1,107 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color1); */
+}
+footer > div{
+    /* margin: 0px 30px; */
+    padding: 10px 6px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color1);
+    border-radius: 20px 20px 0px 0px;
+}
+footer > div > h4{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--color2);
+}
+.top{
+    width: 100%;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    
+}
+.back{
+    position: sticky;
+    right: 40px;
+    width: 3%;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.back > div > h4 {
+    background-color: var(--color1);
+    color: var(--color2);
+    font-weight: bold;
+} 
+
+
+/*   contact */
+.form-area{
+  
+  padding-bottom: 5%;
+  padding-top:7%;
+}
+.row.single-form{
+     box-shadow: 0px 2px 20px -5px var(--color1);
+  }
+  .left{
+    background-color: var(--color1);
+    padding: 221px 98px;
+  }
+  .left > h2{
+    background-color: var(--color1);
+    color: var(--color2);
+    font-weight: 700;
+  }
+  .right{
+    padding: 70px 100px;
+    position: relative;
+    color: var(--color1);
+  }
+  .right > i{
+    position:absolute;
+    font-size:50px;
+    top: 45%;
+    left: -27px;
+    background-color: transparent;
+    color: var(--color1);
+  }
+  .form-control{
+    border: 2px solid var(--color1);
+  }
+  
+  .right button{
+    outline: none;
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+    background-color: var(--color1);
+    width: 100%;
+    transition: 0.5s;
+    color: var(--color2);
+    font-weight: bold;
+  }
+  .right button:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+    border-radius: 0px 20px 0px 20px;
+    font-weight: bold;
+  }
+  #msg{
+    height: 2px ;
+    text-align: center;
+    padding: 0;
+    
+  }

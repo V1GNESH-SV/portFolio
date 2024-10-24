@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200 font-sans">
+    <div
+      class="max-w-3xl mx-auto bg-white shadow-md rounded-lg mt-10 overflow-hidden"
+    >
+      <div class="flex items-center bg-slate-700 text-white p-6">
+        <div class="flex-1">
+          <h1 class="text-4xl font-bold">VIGNESH S</h1>
+          <p class="text-lg">Full-Stack Developer</p>
+        </div>
+        <img
+          src="../../Img/Ressume img.jpeg"
+          id="my_img"
+          alt="Profile Picture"
+          class="rounded-2xl border-2 border-white w-32"
+        />
+      </div>
+
+      <div class="flex">
+        <aside class="bg-gray-100 w-1/3 p-6">
+          <h2 class="text-xl font-semibold text-black mb-4">Contact</h2>
+          <p><i class="fas fa-envelope mr-2"></i>vigneshubi24@gmail.com</p>
+          <p><i class="fas fa-phone mr-2"></i>6379498390</p>
+          <p><i class="fas fa-map-marker-alt mr-2"></i>Tirupur, Tamil Nadu</p>
+
+          <h2 class="text-xl font-semibold text-black mt-6 mb-4">Technical Skills</h2>
+          <ul class="list-disc ml-5 text-gray-700">
+            <li>HTML&CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Tailwind</li>
+          </ul>
+
+          <h2 class="text-xl font-semibold text-black mt-6 mb-4">Soft Skills</h2>
+          <ul class="list-disc ml-5 text-gray-700">
+            <li>Adaptability</li>
+            <li>Problem Solving</li>
+            <li>Communication Skill</li>
+            <li>Negotiating</li>
+          </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Profile
+          </h2>
+          <p class="text-gray-600">
+            Hi I am Vignesh.S , Am Motivated and detail-oriented Frontend Developer with foundational
+            expertise in HTML, CSS, and JavaScript, along with practical
+            experience using Bootstrap and Tailwind for responsive web design
+            where I developed a passion for creating user-centric web applications.
+          </p>
+
+          <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-4">
+            Projects
+          </h2>
+          <div class="mb-4">
+            
+            <ul class="list-disc ml-5 text-gray-500">
+              <li>
+                E-commerce website
+              </li>
+              <li>
+                Portfolio Website
+              </li>
+              <li>
+                CRUD in Java
+              </li>
+            </ul>
+          </div>
+
+          <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-4">
+            Cerification
+          </h2>
+          <div class="mb-4">
+            
+            <ul class="list-disc ml-5 text-gray-500">
+              <li>
+               Banking & Insurance
+              </li>
+              <li>
+                Java & Spring Boot
+              </li>
+             
+            </ul>
+          </div>
+
+          <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-4">
+            Education
+          </h2>
+          <div class="mb-4">
+            <ul class="list-disc ml-5 text-gray-500" >
+              <li>
+                  <p class="text-gray-600">
+                    RVS College of Arts & Science
+                  </p>
+                <p class="text-gray-600">
+                    2021 - 2024
+                  </p>
+                  <h2 class="font-semibold text-sm">
+                    B.COM-Information Technology
+                  </h2>
+                  <p class="text-gray-600">
+                    77.5%
+                   </p>
+              </li>
+              <li>
+                  <p class="text-gray-600">
+                    KSC Boys Higher Secondary School
+                  </p>
+                  <p class="text-gray-600">
+                    2020 - 2021
+                  </p>
+                  <h2 class="font-semibold text-sm">
+                    HSC
+                  </h2>
+                  <p class="text-gray-600">
+                    71%
+                   </p>
+              </li>
+              <li>
+                  <p class="text-gray-600">
+                    KSC Boys Higher Secondary School
+                  </p>
+                  <p class="text-gray-600">
+                    2018 - 2019
+                  </p>
+                  <h2 class="font-semibold text-sm">
+                     SSLC
+                  </h2>
+                  <p class="text-gray-600">
+                    52%
+                   </p>
+              </li>
+            </ul>
+          </div>
+
+          
+
+          
+
+          
+          <!-- Repeat for additional projects -->
+        </main>
+      </div>
+    </div>
+    <div class="text-center mb-8">
+      <button
+        onclick="printResume()"
+        class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+      >
+        Print Resume
+      </button>
+    </div>
+    <script>
+      function printResume() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>

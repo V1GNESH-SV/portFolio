@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  width: 500px;
+}
+
+.game {
+  position: absolute;
+  height: 100%;
+  margin: 0 25%;
+}
+
+.peg {
+  width: 30px;
+  height: 300px;
+  background: greenyellow;
+  position: absolute;
+  margin: 40px;
+  border-radius: 10%;
+}
+
+.disk {
+  width: 80px;
+  height: 200px;
+  text-align: center;
+  background-color: blue;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  z-index: 10000;
+  position: absolute;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packman Assignment</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <img>
+    <button onclick="bloodySweet()">Start</button>
+
+    <script>
+        var velocity=2;
+        var posit=0;
+        var imAge;
+        var pacMan=['./img/pocman1.jpeg','./img/pocman1.jpeg','./img/pocman_03.png','./img/pocman_04.png'];  
+        
+        function create(){
+            imAge=document.createElement('img');
+            imAge.style.position="absolute";
+            imAge.src="./img/pocman1.jpeg";
+            imAge.style.left="30px";
+            imAge.style.top="50px";
+            imAge.style.width="60px"; 
+            imAge.style.height="60px"; 
+            document.body.appendChild(imAge);
+        }
+
+
+        
+        var moveleft=1;
+        var i=0;
+        var a=0;
+        function move(){
+            imAge.src=pacMan[i];
+            i==a?i++:i--;//
+            posit+=moveleft*velocity;
+            if(posit==88) {
+                moveleft= -1;
+                i=2;
+                a=2;
+               
+            }else if(posit==0) {
+                moveleft= 1;//
+                i=0;
+                a=0;
+            }
+            imAge.style.left=posit+'%';
+        }
+
+        function bloodySweet(){
+            create();
+            setInterval(move,200);
+        }
+        
+        </script>
+</body>
+</html>

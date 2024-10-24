@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <button onclick="ballCount()">add</button>
+    <button onclick="moveBall()">move</button>
+    <!-- <img src="../img/pocman_01.png" alt=""> -->
+    <script>
+            var imgs=[]
+            var x_pos=[]
+            var y_pos=[]
+            var x_vel=[]
+            var y_vel=[]
+            var gravity=1
+        function ballCount(){
+                var img=document.createElement("img")
+                img.src="./pocman_01.png";
+                img.style.width="50px"
+                img.style.height="50px"
+                img.style.position="absolute"
+                img.style.zIndex="5"
+                ypos=Math.floor(Math.random()*600)
+                xpos=Math.floor(Math.random()*600)
+                img.style.left=xpos+'px'
+                img.style.top=ypos+'px'
+                xvel=5
+                yvel=5
+                document.body.appendChild(img)
+                imgs.push(img)    
+                x_pos.push(xpos)
+                y_pos.push(ypos)
+                x_vel.push(xvel)
+                y_vel.push(yvel)
+     }
+function moveBall(){
+            for(i=0;i<imgs.length;i++){
+                x_pos[i]+=x_vel[i]
+                y_pos[i]+=y_vel[i]
+                if(x_pos[i] > 1300 || x_pos[i] <= 0) {
+                    x_vel[i] =-x_vel[i]*gravity
+                }
+                if(y_pos[i] > 610 || y_pos[i] <= 0) {
+                    y_vel[i] =-y_vel[i]*gravity
+                }
+                imgs[i].style.left=x_pos[i]+'px'
+                imgs[i].style.top=y_pos[i]+'px'
+            }
+            setTimeout(moveBall,20)
+        }
+</script>
+</body>
+</html>

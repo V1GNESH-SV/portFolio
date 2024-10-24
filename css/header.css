@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color2);
+}
+/* white brown */
+/* 2.Yellow - #f7ca18 */
+/* cyan  */
+/* grass green-#7CFC00 */
+/* green- #0FFF50 */
+/* 1. #FAEBEFFF 2.blue- #333D79FF*/
+/* f7f6de */
+/*  */
+/*  */
+
+:root {
+  --color1: #FAEBEFFF;
+  --color2:  #333D79FF; 
+  /* --color2: #8618af;
+  --color1:  #FAEBEFFF;  */
+}
+body {
+  width: 100%;
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color1);
+}
+#topline {
+  height: 30px;
+  border-bottom: 8px solid var(--color1);
+}
+header {
+  width: 100%;
+}
+/* TOP MENU */
+.upperMenu {
+  position: fixed;
+  margin-right: 80px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  width: 340px;
+  position: relative;
+  float: right;
+  background-color:transparent;
+  z-index: 99;
+  margin-bottom: -40px;
+
+}
+.upperMenu > a {
+  background-color: var(--color1);
+  position: absolute;
+  top: -170px;
+  width: 50px;
+  height: 220px;
+  border-radius: 0px 0px 20px 20px;
+  transition: 0.5s;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+  padding: 0px 9px 5px 9px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-weight: bold;
+}
+.nav1 {
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav2 {
+  right: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav3 {
+  right: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav4 {
+  right: 210px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav5 {
+  right: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+.upperMenu a span {
+  transition: 0.5s;
+  background-color: var(--color1);
+}
+.upperMenu a i {
+  border: 2px solid var(--color1);
+  margin-top: 25px;
+  padding: 8px ;
+  color: var(--color1);
+  transition: 0.5s;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.upperMenu a:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+  top: -10px;
+  height: 150px;
+  transition: 0.3s;
+  margin-top: 10px;
+  justify-content: center;
+}
+.upperMenu a:hover i {
+  background-color: var(--color1);
+  color: var(--color2);
+  display: none;
+  transition: 0.3s;
+}
+.upperMenu a:hover span {
+  background-color: var(--color1);
+  color: var(--color2);
+}
